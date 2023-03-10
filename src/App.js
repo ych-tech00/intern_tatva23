@@ -5,6 +5,7 @@ import Title from './component/Title'
 import Home from './pages/Home';
 import Counter from './component/Counter';
 import About from './pages/About';
+import List from './component/List';
 //class component
 const App=()=> {
 
@@ -12,8 +13,6 @@ const App=()=> {
 const toggle=()=>{
     setState(!togle);
       }
-    
-
     
   return (
     <>
@@ -28,8 +27,10 @@ const toggle=()=>{
       {/* <Home/> */}
       {/* <Counter /> day 4 task done */}
       {/* <About/> */}
-      { togle ? <Home/>:<About/>}
-      <button onClick={toggle}>Toggle </button>
+      {/* { togle ? <Home/>:<About/>}
+      <button onClick={toggle}>Toggle </button> */}
+      <List/>
+      {/* <Title/> */}
     </div>
     </>
   );
